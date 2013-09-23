@@ -1,0 +1,9 @@
+<h1 class="lobster_font"><%= @contact.name %></h1>
+
+<p>Phone: <%= @contact.phone %></p>
+<p>Email: <%= @contact.email %></p>
+
+
+<p><%= link_to 'Delete Contact', @contact, method: :delete, data: { confirm: 'Are you sure you want to delete this contact?' } %></p>
+<p><%= link_to 'Edit Contact', edit_contact_path(@contact) %></p>
+<p><%= link_to 'Return to contact listing', contacts_path %></p>
